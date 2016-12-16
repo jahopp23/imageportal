@@ -31,19 +31,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/images/index">Image Portal</a>
+                <a class="navbar-brand" href="/images/index">image_portal</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/images/new">Post Image</a>
+                      <!--   <a href="/images/new">Post Image</a> -->
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <!-- <a href="#">Services</a> -->
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                       <!--  <a href="#">Contact</a> -->
                     </li>
                 </ul>
             </div>
@@ -55,19 +55,32 @@
 
 
 
-<div class = 'row'>
-<div class='col-md-4'>
-</div>
+<div class = "container"'>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3><strong>image portal</strong></h3>
+               
+                <p class="lead"><a href="/images/new">post image</a><br><a href="https://github.com/jahopp23/image_portal2">code</a></p>
+                <sub>Rails v5.0.0</sub></br>
+                
+                <sub>under construction</sub>
+                
+                   
+                
+            </div>
+        </div>
+        <!-- /.row -->
+<hr>
 
 
-<div class = "col-md-4">
-<h1>Post Image</h1>
-<h4>Jpeg / Png / Gif</h4>
+
+<div class = "col-lg-12">
+
 
 <div class="span6 offset3">
 <%= form_for @image, :url => images_path, :html => {:multipart => true} do |f| %>
  
-  <%= f.label :avatar %>
+  <%= f.label :image %>
   <%= f.file_field :avatar %>
   </br>
   <%= f.label :title %>
