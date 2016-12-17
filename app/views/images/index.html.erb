@@ -83,19 +83,19 @@
           
                 <% if @images %>
                 <% @images.each do |image| %>
-                <div class="col-md-4">
+                  <div class="col-md-4">
                 
                          <!-- <div class='panel panel-default'> -->
                          <div class='thumbnail'>
                         <%= image_tag image.avatar.url %>
-                            <li class="list-group-item">
-                       <%= image_tag image.title%>
-                       </li>
+                          <!--   <li class="list-group-item"> --> 
+                            <%= image_tag image.title, {class: "list-group-item"} %>
+                        
                         </div>
                    
                        <!-- </div> -->
                         <!--  <sub><%= image_tag image.created_at %></sub> -->
-                </div>
+                  </div>
                 <% end %>
                 <% end %>
           
